@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .containerparent {
+            width: 100%;
+            display: flex;
+            gap: 5%;
+        }
+        .droping{
+            width: 75%;
+            display: grid;
+            grid-template-rows: repeat(3,1fr);
+            grid-gap: 5px;
+        }
+        /* .draging {
+            width: 20%;
+        } */
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-column-gap: 5px;
+
+            background-color: #eee;
+        }
+        .dropimg {
+            border: 1px solid black;
+        }
+        
+            img{
+                display: block;
+                width: 120px;
+                height: 90px;
+            }
+        .dropimg img{
+            width: 100%;
+            height: 100%;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="containerparent">
+        <div class="droping">
+            <div class="container">
+                <div class="dropimg img1" title="img1"></div>
+                <div class="dropimg img2" title="img2"></div>
+                <div class="dropimg img3" title="img3"></div>
+            </div>
+            <div class="container">
+                <div class="dropimg img4" title="img4"></div>
+                <div class="dropimg img5" title="img5"></div>
+                <div class="dropimg img6" title="img6"></div>
+            </div>
+            <div class="container">
+                <div class="dropimg img7" title="img7"></div>
+                <div class="dropimg img8" title="img8"></div>
+                <div class="dropimg img9" title="img9" ></div>
+            </div>
+
+        </div>
+        <div class="draging">
+            <img src="assets/1.png" alt="" draggable="true" id="img1"  class="image">
+            <img src="assets/2.png" alt="" draggable="true" id="img2"  class="image">
+            <img src="assets/3.png" alt="" draggable="true" id="img3"  class="image">
+            <img src="assets/4.png" alt="" draggable="true" id="img4"  class="image">
+            <img src="assets/5.png" alt="" draggable="true" id="img5"  class="image">
+            <img src="assets/6.png" alt="" draggable="true" id="img6"  class="image">
+            <img src="assets/7.png" alt="" draggable="true" id="img7"  class="image">
+            <img src="assets/8.png" alt="" draggable="true" id="img8"  class="image">
+            <img src="assets/9.png" alt="" draggable="true" id="img9"  class="image">
+            
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
